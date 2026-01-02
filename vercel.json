@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "framework": "vite",
   "buildCommand": "pnpm build",
-  "installCommand": "pnpm install"
-},
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "env": {
+    "NODE_ENV": "production"
+  },
   "functions": {
     "server/index.ts": {
       "runtime": "nodejs18.x",
@@ -24,4 +27,4 @@
       "permanent": true
     }
   ]
-}
+}"
